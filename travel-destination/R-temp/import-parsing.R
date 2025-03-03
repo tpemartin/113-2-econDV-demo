@@ -10,5 +10,13 @@ reshaped_data <- reshaped_data %>%
          Year = as.integer(Year),
          Number_of_Travelers = as.numeric(Number_of_Travelers))
 
-# View the parsed data
-head(reshaped_data)
+# Summary of the reshaped data
+summary(reshaped_data)
+
+# Summary of the number of travelers by year
+summary_by_year <- reshaped_data %>%
+  group_by(Year) %>%
+  summarise(Total_Travelers = sum(Number_of_Travelers, na.rm = TRUE))
+
+# View the summary by year
+print(summary_by_year)
