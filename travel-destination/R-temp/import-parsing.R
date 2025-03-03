@@ -1,0 +1,14 @@
+library(tidyverse)
+
+# Import the reshaped data
+reshaped_data <- read_csv("travel-destination/reshaped_travel_data.csv")
+
+# Parse variables according to the codebook
+reshaped_data <- reshaped_data %>%
+  mutate(`首站抵達地` = as.factor(`首站抵達地`),
+         `細分` = as.factor(`細分`),
+         Year = as.integer(Year),
+         Number_of_Travelers = as.numeric(Number_of_Travelers))
+
+# View the parsed data
+head(reshaped_data)
