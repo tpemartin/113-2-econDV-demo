@@ -1,7 +1,7 @@
 library(tidyverse)
 
 # Read the CSV file
-data <- readr::read_csv("path/to/歷年中華民國國民出國目的地人數統計2002-2024.csv")
+data <- readr::read_csv("travel-destination/歷年中華民國國民出國目的地人數統計2002-2024.csv")
 
 # Convert all year columns to numeric
 data <- data %>%
@@ -14,5 +14,5 @@ reshaped_data <- data %>%
                values_to = "Number_of_Travelers") %>%
   mutate(Year = as.integer(Year))
 
-# View the reshaped data
-head(reshaped_data)
+# Save the reshaped data as a CSV file
+write_csv(reshaped_data, "travel-destination/reshaped_travel_data.csv")
