@@ -22,7 +22,7 @@ summary_stats <- summary(reshaped_data)
 summary_df <- as.data.frame.matrix(summary_stats)
 
 # Convert to markdown table
-markdown_table <- kable(summary_df, format = "markdown")
+markdown_table <- kable(summary_df, format = "markdown", row.names = FALSE)
 
 # Print the markdown table
 print(markdown_table)
