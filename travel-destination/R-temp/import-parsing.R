@@ -11,7 +11,21 @@ reshaped_data <- reshaped_data %>%
          Number_of_Travelers = as.numeric(Number_of_Travelers))
 
 # Summary of the reshaped data
-summary(reshaped_data)
+summary
+
+# Install and load knitr
+# install.packages("knitr")
+library(knitr)
+
+# Generate summary statistics and convert to data frame
+summary_stats <- summary(reshaped_data)
+summary_df <- as.data.frame.matrix(summary_stats)
+
+# Convert to markdown table
+markdown_table <- kable(summary_df, format = "markdown")
+
+# Print the markdown table
+print(markdown_table)
 
 # Summary of the number of travelers by year
 summary_by_year <- reshaped_data %>%
