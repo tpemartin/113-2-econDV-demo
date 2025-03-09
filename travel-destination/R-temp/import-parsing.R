@@ -34,3 +34,15 @@ summary_by_year <- reshaped_data %>%
 
 # View the summary by year
 print(summary_by_year)
+
+library(summarytools)
+
+# Summarizing the data frame
+summary_df <- dfSummary(reshaped_data)
+
+# Directly creating a Markdown table from the summary statistics
+summary_data <- as.data.frame(summary(summary_df))
+markdown_table <- knitr::kable(summary_data, format = "markdown")
+
+# Print or save the Markdown table
+cat(markdown_table)
