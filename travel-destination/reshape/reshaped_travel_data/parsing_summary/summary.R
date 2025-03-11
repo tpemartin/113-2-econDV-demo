@@ -40,3 +40,19 @@ ggplot(cleaned_data, aes(Year)) +
 ggplot(cleaned_data, aes(Number_of_Travelers)) +
   geom_histogram(bins = 30, fill = "green", alpha = 0.7) +
   labs(title = "Distribution of Number of Travelers", x = "Number of Travelers", y = "Frequency")
+
+library(dplyr)
+
+# Summarize missing data in reshaped_travel_data
+missing_summary <- reshaped_travel_data %>%
+  summarise(
+    missing_values = sapply(., function(x) sum(is.na(x))),
+    missing_percentage = sapply(., function(x) mean(is.na(x)) * 100)
+  )
+
+# Convert the summary to a data frame and set variable names as row names
+missing_summary_df <- as.data.frame(missing_summary)
+row.names(missing_summary_df) <- colnames(reshaped_travel_data)
+
+# View the summary of missing data
+print(missing_summary_df)

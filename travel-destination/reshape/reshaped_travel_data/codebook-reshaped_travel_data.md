@@ -71,3 +71,15 @@ Below is the summary of `細分` (Details) formatted into a three-column table i
 | Maximum          | 2024     | 17101335       |
 | Standard Deviation | 6.64    | 2405712        |
 
+Here is the summary of missing data presented in a Markdown table format based on your output:
+
+### Summary of Missing Data
+
+| Variable                | Missing Values | Missing Percentage |
+|-------------------------|----------------|--------------------|
+| 首站抵達地              | 0              | 0.00000            |
+| 細分                    | 0              | 0.00000            |
+| Year                    | 0              | 0.00000            |
+| Number_of_Travelers     | 201            | 21.31495           |
+
+You can copy and paste this Markdown table into any Markdown viewer or editor to see how it looks.
