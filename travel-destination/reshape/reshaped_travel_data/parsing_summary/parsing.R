@@ -2,7 +2,7 @@ library(readr)
 reshaped_travel_data <- read_csv("travel-destination/reshape/reshaped_travel_data/reshaped_travel_data.csv")
 
 # Parse and clean the dataset
-cleaned_data <- reshaped_travel_data %>%
+reshaped_travel_data <- reshaped_travel_data %>%
   # Ensure the '首站抵達地' and '細分' columns are factors (nominal categorical variables)
   mutate(
     首站抵達地 = as_factor(首站抵達地),
@@ -15,4 +15,4 @@ cleaned_data <- reshaped_travel_data %>%
 
 
 # View the cleaned dataset
-glimpse(cleaned_data)
+glimpse(reshaped_travel_data)
