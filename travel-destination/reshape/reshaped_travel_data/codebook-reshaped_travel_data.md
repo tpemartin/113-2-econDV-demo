@@ -3,6 +3,10 @@
 ## Dataset Description
 This dataset contains information on the number of travelers visiting Japan from various Asian regions from the year 2002 to 2009. The data is structured in a tabular format with multiple observations for each year, including both missing values (represented as "NA") and actual traveler counts. The dataset is useful for analyzing trends in travel to Japan over the specified years.
 
+## Dimension
+
+943 obs. of 4 variables
+
 ## Variable Summary
 
 | Variable Name        | Class       | Meaning                                 | Example              |
