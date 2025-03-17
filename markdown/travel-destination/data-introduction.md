@@ -12,6 +12,8 @@
 |美洲地區   |   92|
 |非洲地區   |   69|
 
+  - How many different 首站抵達地？Which one has the most observations? Which one has the least observations?
+
 ## 細分
 
 |var_data              | Freq|
@@ -58,14 +60,19 @@
 |香港Hong Kong         |   23|
 |馬來西亞Malaysia      |   23|
 
+  - Exclude 其他地區 and 合計 and 總計, how many countries are present in `細分`? 
+
 ## Year
 
 | Mean| Median|       SD|  Max|  Min| Range|
 |----:|------:|--------:|----:|----:|-----:|
 | 2013|   2013| 6.636769| 2024| 2002|    22|
 
+  - Years start from 2002 to 2024.
+
 ## Number_of_Travelers
 
 |     Mean|  Median|      SD|      Max| Min|    Range|
 |--------:|-------:|-------:|--------:|---:|--------:|
 | 721486.1| 42944.5| 2405712| 17101335|   0| 17101335|
+
