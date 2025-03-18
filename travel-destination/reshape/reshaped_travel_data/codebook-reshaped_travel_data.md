@@ -11,8 +11,8 @@ This dataset contains information on the number of travelers visiting Japan from
 
 | Variable Name        | Class       | Meaning                                 | Example              |
 |----------------------|-------------|-----------------------------------------|----------------------|
-| 首站抵達地           | Categorical | The primary destination region of the travelers. In this case, all entries are "亞洲地區" (Asian Region). | 亞洲地區              |
-| 細分                 | Categorical | Further breakdown of destination, specifically the country. | 日本Japan            |
+| 首站抵達地           | Factor | The primary destination region of the travelers. In this case, all entries are "亞洲地區" (Asian Region). | 亞洲地區              |
+| 細分                 | Factor | Further breakdown of destination, specifically the country. | 日本Japan            |
 | Year                 | Numeric     | The year of the observation, ranging from 2002 to 2009. | 2006                 |
 | Number_of_Travelers  | Numeric     | The number of travelers visiting Japan in the given year. Missing values are represented as "NA". | 1309847              |
 
