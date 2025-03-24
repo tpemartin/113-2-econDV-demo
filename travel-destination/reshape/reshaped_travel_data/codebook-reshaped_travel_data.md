@@ -5,7 +5,7 @@ This dataset contains information on the number of travelers visiting Japan from
 
 ## Dimension
 
-943 obs. of 4 variables
+782 obs. of 4 variables
 
 ## Variable Summary
 
@@ -26,64 +26,68 @@ Below is the summary of `首站抵達地` (Arrival Destination) formatted into a
 
 ### Summary of 首站抵達地 (Arrival Destination)
 
-| 亞洲地區 | 非洲地區 | 美洲地區 | 大洋洲地區 | 歐洲地區 | 全區 |
-|----------|----------|----------|------------|----------|------|
-| 414      | 69       | 92       | 115        | 207      | 46   |
+| 首站抵達地 | Count |
+| --- | --- |
+| 亞洲地區 | 391 |
+| 非洲地區 | 46 |
+| 美洲地區 | 69 |
+| 大洋洲地區 | 92 |
+| 歐洲地區 | 184 |
+
 
 Below is the summary of `細分` (Details) formatted into a three-column table in Markdown, starting from the specified format:
 
 ### Summary of 細分 (Details)
 
-| 細分                             |       |       |
-|----------------------------------|-------|-------|
-| 日本Japan                        | 韓國Korea                        | 香港Hong Kong                   |
-| 23                               | 23    | 23    |
-| 中國大陸China                   | 澳門Macao                       | 越南Vietnam                     |
-| 23                               | 23    | 23    |
-| 泰國Thailand                    | 馬來西亞Malaysia                | 新加坡Singapore                 |
-| 23                               | 23    | 23    |
-| 菲律賓Philippines                | 汶萊Brunei                      | 印尼Indonesia                   |
-| 23                               | 23    | 23    |
-| 柬埔寨Cambodia                  | 緬甸Myanmar                     | 阿拉伯聯合大公國UAE             |
-| 23                               | 23    | 23    |
-| 土耳其Turkey                    | 亞洲其他地區 Others              | 亞洲合計 Total                  |
-| 23                               | 23    | 23    |
-| 南非S. Africa                   | 非洲其他地區 Others              | 非洲合計 Total                  |
-| 23                               | 23    | 23    |
-| 美國USA                         | 加拿大Canada                    | 美洲其他地區 Others              |
-| 23                               | 23    | 23    |
-| 美洲合計 Total                  | 澳洲Australia                    | 紐西蘭New Zealand               |
-| 23                               | 23    | 23    |
-| 帛琉Palau                       | 大洋洲其他地區 Others            | 大洋洲合計 Total                |
-| 23                               | 23    | 23    |
-| 法國France                      | 德國Germany                     | 義大利Italy                    |
-| 23                               | 23    | 23    |
-| 荷蘭Netherlands                 | 英國U.K.                       | 瑞士Switzerland                 |
-| 23                               | 23    | 23    |
-| 奧地利Austria                  | 歐洲其他地區 Total              | 歐洲合計 Total                  |
-| 23                               | 23    | 23    |
-| 其他 Others                     | 總計 Grand Total                |                                 |
-| 23                               | 23    |                                 |
+| 細分 | Count |
+| --- | --- |
+| 日本Japan | 23 |
+| 韓國Korea | 23 |
+| 香港Hong Kong | 23 |
+| 中國大陸China | 23 |
+| 澳門Macao | 23 |
+| 越南Vietnam | 23 |
+| 泰國Thailand | 23 |
+| 馬來西亞Malaysia | 23 |
+| 新加坡Singapore | 23 |
+| 菲律賓Philippines | 23 |
+| 汶萊Brunei | 23 |
+| 印尼Indonesia | 23 |
+| 柬埔寨Cambodia | 23 |
+| 緬甸Myanmar | 23 |
+| 阿拉伯聯合大公國UAE | 23 |
+| 土耳其Turkey | 23 |
+| 亞洲其他地區 Others | 23 |
+| 南非S. Africa | 23 |
+| 非洲其他地區 Others | 23 |
+| 美國USA | 23 |
+| 加拿大Canada | 23 |
+| 美洲其他地區 Others | 23 |
+| 澳洲Australia | 23 |
+| 紐西蘭New Zealand | 23 |
+| 帛琉Palau | 23 |
+| 大洋洲其他地區 Others | 23 |
+| 法國France | 23 |
+| 德國Germany | 23 |
+| 義大利Italy | 23 |
+| 荷蘭Netherlands | 23 |
+| 英國U.K. | 23 |
+| 瑞士Switzerland | 23 |
+| 奧地利Austria | 23 |
+| 歐洲其他地區 Total | 23 |
+
 
 ### Summary of Numerical Statistics
 
-| Statistic        | Year      | Travelers      |
-|------------------|-----------|----------------|
-| Mean             | 2013     | 721486.1       |
-| Median           | 2013     | 42944.5        |
-| Minimum          | 2002     | 0              |
-| Maximum          | 2024     | 17101335       |
-| Standard Deviation | 6.64    | 2405712        |
+| Year |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mean | Median | SD | Max | Min | Range | NA_Proportion |
+| 2013 | 2013 | 6.637494861 | 2024 | 2002 | 22 | 0 |
 
-Here is the summary of missing data presented in a Markdown table format based on your output:
 
-### Summary of Missing Data
+| number_of_traveler |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| Mean | Median | SD | Max | Min | Range | NA_Proportion |
+| 288267.7715 | 33000 | 747758.5439 | 6006116 | 0 | 6006116 | 0.2109974425 |
 
-| Variable                | Missing Values | Missing Percentage |
-|-------------------------|----------------|--------------------|
-| 首站抵達地              | 0              | 0.00000            |
-| 細分                    | 0              | 0.00000            |
-| Year                    | 0              | 0.00000            |
-| Number_of_Travelers     | 201            | 21.31495           |
 
-You can copy and paste this Markdown table into any Markdown viewer or editor to see how it looks.

@@ -1,10 +1,26 @@
 library(dplyr)
 
-# Summarize total number of travelers for each 細分 place
-total_travelers_summary <- reshaped_travel_data %>%
-  group_by(細分) %>%                   # Group by 細分 place
-  summarise(total_travelers = sum(Number_of_Travelers, na.rm = TRUE)) %>% # Calculate total travelers, ignoring NAs
-  arrange(desc(total_travelers))        # Optional: arrange in descending order
+# Define a function to calculate summary statistics for numeric variables
+summarize_numeric <- function(x) {
+  tibble(
+    Median = median(x, na.rm = TRUE),
+    Mean = mean(x, na.rm = TRUE),
+    Range = range(x, na.rm = TRUE),
+    IQR = IQR(x, na.rm = TRUE)
+  )
+}
 
-# View the summarized data
-print(total_travelers_summary)
+# Create frequency tables for factors
+frequency_table_factor1 <- table(reshaped_travel_data$首站抵達地) %>% as.data.frame()
+frequency_table_factor2 <- table(reshaped_travel_data$細分) %>% as.data.frame()
+
+# Create a list to store all summaries
+summary_list <- list(
+  首站抵達地 = frequency_table_factor1,
+  細分 = frequency_table_factor2,
+  Year = summarize_numeric(reshaped_travel_data$Year),
+  Number_of_Travelers = summarize_numeric(reshaped_travel_data$Number_of_Travelers)
+)
+
+# Display the summary_list
+summary_list

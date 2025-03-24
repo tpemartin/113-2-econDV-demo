@@ -1,5 +1,5 @@
 library(readr)
-reshaped_travel_data <- read_csv("travel-destination/reshape/reshaped_travel_data/reshaped_travel_data.csv")
+# reshaped_travel_data <- read_csv("travel-destination/reshape/reshaped_travel_data/reshaped_travel_data.csv")
 
 # Parse and clean the dataset
 reshaped_travel_data <- reshaped_travel_data %>%
