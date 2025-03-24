@@ -6,3 +6,4 @@ travel-destination/reshape/reshaped_travel_data/parsing_summary/parsing.R
 
 travel-destination/reshape/reshaped_travel_data/parsing_summary/summary.R
 
+travel-destination/reshape/reshaped_travel_data/parsing_summary/summary_gsheets_upload.R
