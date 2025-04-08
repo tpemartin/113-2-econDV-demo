@@ -1,0 +1,15 @@
+### Data Introduction
+
+The dataset under analysis provides a comprehensive view of the travel patterns of Republic of China (Taiwan) nationals to various international destinations over several years. The dataset, comprising 782 observations across four key variables, offers valuable insights into the travel tendencies and preferences of Taiwanese citizens.
+
+The primary focus of the dataset is on the number of travelers departing from Taiwan, categorized by their initial arrival destinations and further broken down by specific countries within those regions. The dataset spans from the year 2002 to 2009, making it possible to observe trends and changes over time. The four variables included in the dataset are: "首站抵達地" (Primary Arrival Destination), "細分" (Destination Breakdown), "Year", and "Number_of_Travelers". 
+
+The "首站抵達地" variable identifies the broad regional category to which the traveler is heading. In this dataset, all entries are classified under "亞洲地區" (Asian Region). The "細分" variable provides a more granular breakdown, specifying the exact country of destination within the Asian region. The "Year" variable denotes the year of observation, and the "Number_of_Travelers" variable indicates the count of travelers visiting the specified destination in that year. Notably, missing values in the "Number_of_Travelers" variable are represented as "NA".
+
+The dataset reveals that the majority of Taiwanese travelers prefer Asian destinations, with a significant number heading to Japan, Korea, Hong Kong, China, and other neighboring countries. This preference is evident from the count summaries, where regions such as the Asian Region show high travel counts compared to other regions like Africa, America, Oceania, and Europe.
+
+Additionally, the numerical statistics provide an overview of the dataset's characteristics. The average year of observation is 2013, with a standard deviation indicating the spread of data points over the years. The average number of travelers is approximately 288,268, with a median of 33,000, and the highest recorded traveler count reaching over 6 million. The dataset also highlights that 21% of the data points for the number of travelers are missing, emphasizing the need to account for these gaps in any analysis.
+
+Further analysis of the travel summary data indicates that the total number of travelers across different initial arrival destinations varies significantly. The Asian Region accounts for the overwhelming majority of travelers, with a total of 163,314,375 travelers, representing 91.82% of the total. Other regions such as Oceania, Europe, America, and Africa have much lower traveler counts, with 2,064,998 (1.16%), 3,973,934 (2.23%), 8,462,167 (4.76%), and 45,741 (0.03%) travelers respectively.
+
+In summary, this dataset offers a detailed account of Taiwanese outbound travel patterns, with a specific focus on Asian destinations. The data's temporal range and variable comprehensiveness make it an invaluable resource for understanding the travel behavior of Taiwanese nationals and for conducting further economic and tourism-related studies.
